@@ -21,7 +21,6 @@ This template includes 1 example plugin.
 
 Everything in this repo is released into the public domain. You may use it however you want with no conditions whatsoever
 
-
 ## Attribution
 
 This template as well as the gradle plugin and the whole plugin system is **heavily** based on [Aliucord](https://github.com/Aliucord).
