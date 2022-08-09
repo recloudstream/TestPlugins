@@ -9,6 +9,6 @@ import android.content.Context
 class EjaPlugin: Plugin() {
     override fun load(context: Context) {
         // All providers should be added in this manner
-        APIHolder.allProviders.add(EjaTv())
+        registerMainAPI(EjaTv())
     }
 }

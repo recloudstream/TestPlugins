@@ -9,6 +9,6 @@ import android.content.Context
 class TestPlugin: Plugin() {
     override fun load(context: Context) {
         // All providers should be added in this manner
-        APIHolder.allProviders.add(ExampleProvider())
+        registerMainAPI(ExampleProvider())
     }
 }
