@@ -18,5 +18,5 @@ cloudstream {
     status = 1
 
     // Set to true to get an 18+ symbol next to the plugin
-    isAdult = true
+    adult = true
 }
