@@ -17,13 +17,6 @@ class ExampleProvider(val plugin: TestPlugin) : MainAPI() { // all providers mus
 
     // this function gets called when you search for something
     override suspend fun search(query: String): List<SearchResponse> {
-        if (query == "openFragment") {
-            val frag = BlankFragment(plugin)
-            frag.show(plugin.activity!!.supportFragmentManager, "sexFrag")
-        }
-
         return listOf<SearchResponse>()
     }
-
-
 }
