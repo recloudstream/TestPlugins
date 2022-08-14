@@ -22,8 +22,7 @@ cloudstream {
     * */
     status = 1
 
-    // Set to true to get an 18+ symbol next to the plugin
-    adult = true
+    tvTypes = listOf("NSFW")
 
     requiresResources = true
     language = "en"
