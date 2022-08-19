@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -38,6 +39,11 @@ class BlankFragment(val plugin: TestPlugin) : BottomSheetDialogFragment() {
         return ResourcesCompat.getDrawable(plugin.resources!!, id, null)
     }
 
+    private fun getString(name: String): String? {
+        val id = plugin.resources!!.getIdentifier(name, "string", BuildConfig.LIBRARY_PACKAGE_NAME)
+        return plugin.resources!!.getString(id)
+    }
+
     private fun <T : View> View.findView(name: String): T {
         val id = plugin.resources!!.getIdentifier(name, "id", BuildConfig.LIBRARY_PACKAGE_NAME)
         return this.findViewById(id)
@@ -55,8 +61,14 @@ class BlankFragment(val plugin: TestPlugin) : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val imageView = view.findView<ImageView>("imageView")
+        val textView = view.findView<TextView>("textView")
+
+        textView.text = getString("hello_fragment")
+
         imageView.setImageDrawable(
             getDrawable("ic_android_24dp")
         )
+
+
     }
 }
