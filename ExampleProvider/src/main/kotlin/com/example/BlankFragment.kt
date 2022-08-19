@@ -73,7 +73,7 @@ class BlankFragment(val plugin: TestPlugin) : BottomSheetDialogFragment() {
 
         textView.text = getString("hello_fragment")
         textView.setTextAppearance(view.context, R.style.ResultInfoText)
-        textView2.text = view.context.resources.getText(R.string.nginx_info_summary)
+        textView2.text = view.context.resources.getText(R.string.legal_notice_text)
 
         imageView.setImageDrawable(
             getDrawable("ic_android_24dp")
