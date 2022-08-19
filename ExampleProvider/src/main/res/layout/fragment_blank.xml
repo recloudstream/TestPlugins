@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/mainFragmentLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".BlankFragment">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="24dp"
-        android:text="Hello Funny fragment!!" />
+        android:layout_height="wrap_content"
+        android:text="@string/hello_fragment" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp" />
+        android:src="@drawable/ic_android_24dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
