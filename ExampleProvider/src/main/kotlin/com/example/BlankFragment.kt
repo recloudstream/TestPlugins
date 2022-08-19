@@ -1,10 +1,13 @@
 package com.example
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,6 +33,16 @@ class BlankFragment(val plugin: TestPlugin) : BottomSheetDialogFragment() {
         }
     }
 
+    private fun getDrawable(name: String): Drawable? {
+        val id = plugin.resources!!.getIdentifier(name, "drawable", BuildConfig.LIBRARY_PACKAGE_NAME)
+        return ResourcesCompat.getDrawable(plugin.resources!!, id, null)
+    }
+
+    private fun <T : View> View.findView(name: String): T {
+        val id = plugin.resources!!.getIdentifier(name, "id", BuildConfig.LIBRARY_PACKAGE_NAME)
+        return this.findViewById(id)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,5 +51,12 @@ class BlankFragment(val plugin: TestPlugin) : BottomSheetDialogFragment() {
         val id = plugin.resources!!.getIdentifier("fragment_blank", "layout", "com.example")
         val layout = plugin.resources!!.getLayout(id)
         return inflater.inflate(layout, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val imageView = view.findView<ImageView>("imageView")
+        imageView.setImageDrawable(
+            getDrawable("ic_android_24dp")
+        )
     }
 }
