@@ -22,7 +22,7 @@ cloudstream {
     * */
     status = 1
 
-    tvTypes = listOf("NSFW")
+    tvTypes = listOf("Movie")
 
     requiresResources = true
     language = "en"

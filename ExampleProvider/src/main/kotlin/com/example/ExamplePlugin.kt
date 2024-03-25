@@ -18,7 +18,7 @@ class TestPlugin: Plugin() {
 
         openSettings = { ctx ->
             val frag = BlankFragment(this)
-            frag.show(activity!!.supportFragmentManager, "sexFrag")
+            frag.show(activity!!.supportFragmentManager, "Frag")
         }
     }
 }
