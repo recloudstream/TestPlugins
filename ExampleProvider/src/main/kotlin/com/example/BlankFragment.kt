@@ -59,7 +59,7 @@ class BlankFragment(val plugin: TestPlugin) : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val id = plugin.resources!!.getIdentifier("fragment_blank", "layout", "com.example")
+        val id = plugin.resources!!.getIdentifier("fragment_blank", "layout", BuildConfig.LIBRARY_PACKAGE_NAME)
         val layout = plugin.resources!!.getLayout(id)
         return inflater.inflate(layout, container, false)
     }
