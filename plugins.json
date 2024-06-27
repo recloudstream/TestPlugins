@@ -1,21 +1,62 @@
 [
     {
-        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korduene_Logo.png",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=tr.canlitv.team&sz=%size%",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/recloudstream/TestPlugins",
-        "fileSize": 8306,
+        "repositoryUrl": "https://github.com/Umutkara-tools/cloudstreamm",
+        "fileSize": 17519,
         "status": 1,
-        "language": "en",
+        "language": "tr",
         "authors": [
-            "Cloudburst"
+            "Adippe",
+            "Umutkara-tools"
+        ],
+        "tvTypes": [
+            "Live"
+        ],
+        "version": 2,
+        "internalName": "CanliTV",
+        "description": "Canl\u0131 TV",
+        "url": "https://raw.githubusercontent.com/Umutkara-tools/cloudstreamm/builds/CanliTV.cs3",
+        "name": "CanliTV"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=hdfilmcehennemi.com&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Umutkara-tools/cloudstreamm",
+        "fileSize": 17285,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "Hexated",
+            "Umutkara-tools"
         ],
         "tvTypes": [
             "Movie"
         ],
-        "version": -1,
-        "internalName": "ExampleProvider",
-        "description": "Lorem ipsum",
-        "url": "https://raw.githubusercontent.com/recloudstream/TestPlugins/builds/ExampleProvider.cs3",
-        "name": "ExampleProvider"
+        "version": 11,
+        "internalName": "HDFilmCehennemi",
+        "description": "T\u00fcrkiye'nin en h\u0131zl\u0131 hd film izleme sitesi",
+        "url": "https://raw.githubusercontent.com/Umutkara-tools/cloudstreamm/builds/HDFilmCehennemi.cs3",
+        "name": "HDFilmCehennemi"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=youtube.com&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Umutkara-tools/cloudstreamm",
+        "fileSize": 14117,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "Cloudburst",
+            "Umutkara-tools"
+        ],
+        "tvTypes": [
+            "Others"
+        ],
+        "version": 2,
+        "internalName": "YouTube",
+        "description": "YouTube, izledi\u011finiz videolarla \u00f6nerilerini iyile\u015ftirir. \u0130lginizi \u00e7ekebilecek i\u00e7eriklerle dolu bir ak\u0131\u015f olu\u015fturmak i\u00e7in video izlemeye ba\u015flay\u0131n.",
+        "url": "https://raw.githubusercontent.com/Umutkara-tools/cloudstreamm/builds/YouTube.cs3",
+        "name": "YouTube"
     }
 ]
