@@ -26,7 +26,7 @@ For local plugin testing, you need to grant the app "All Files Access" on newer 
 
 * `adb shell appops set --uid PACKAGE_NAME MANAGE_EXTERNAL_STORAGE allow`
 * Replace `PACKAGE_NAME` with the name of the package for the Cloudstream3 version you are using:
-   - debug: `com.lagradost.cloudstream3.debug`
+   - debug: `com.lagradost.cloudstream3.prerelease.debug`
    - prerelease: `com.lagradost.cloudstream3.prerelease`
    - stable: `com.lagradost.cloudstream3`
 
