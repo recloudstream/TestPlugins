@@ -1,10 +1,3 @@
-name: Build
-
-# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#concurrency
-concurrency: 
-  group: "build"
-  cancel-in-progress: true
-
 name: Build and Deploy
 on:
   push:
@@ -37,5 +30,3 @@ jobs:
           branch: builds
           folder: builds
           clean: true
- "Build $GITHUB_SHA" || exit 0   # do not error if nothing to commit
-          git push --force
