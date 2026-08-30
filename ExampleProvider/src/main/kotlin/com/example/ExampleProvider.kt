@@ -1,21 +1,27 @@
-package com.example
+import com.lagradost.cloudstream3.gradle.CloudstreamExtension
 
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.TvType
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
+    dependencies {
+        classpath("com.github.recloudstream:gradle:master-SNAPSHOT")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.20")
+        classpath("com.android.tools.build:gradle:8.2.0")
+    }
+}
 
-class ExampleProvider : MainAPI() { // All providers must be an instance of MainAPI
-    override var mainUrl = "https://example.com/" 
-    override var name = "Example provider"
-    override val supportedTypes = setOf(TvType.Movie)
+plugins {
+    id("com.android.library") version "8.2.0" apply false
+    kotlin("android") version "1.9.20" apply false
+}
 
-    override var lang = "en"
-
-    // Enable this when your provider has a main page
-    override val hasMainPage = true
-
-    // This function gets called when you search for something
-    override suspend fun search(query: String): List<SearchResponse> {
-        return listOf()
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
     }
 }
